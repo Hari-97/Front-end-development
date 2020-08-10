@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="app.js"></script>
+    <div class="container">
+        <h2 onclick="refresh()"><span>+ </span> New Game</h3>
+        <h1>Active: <span>Player-1</span></h2>
+        <div class="empty"></div>
+        <div class="board">
+            <div class="line_1">
+                <div id="box-1" onclick="printXO('box-1','line_1')"></div>
+                <div id="box-2" onclick="printXO('box-2','line_1')"></div>
+                <div id="box-3" onclick="printXO('box-3','line_1')"></div>
+            </div>
+            <div class="line_2">
+                <div id="box-4" onclick="printXO('box-4','line_2')"></div>
+                <div id="box-5" onclick="printXO('box-5','line_2')"></div>
+                <div id="box-6" onclick="printXO('box-6','line_2')"></div>
+            </div>
+            <div class="line_3">
+                <div id="box-7" onclick="printXO('box-7','line_3')"></div>
+                <div id="box-8" onclick="printXO('box-8','line_3')"></div>
+                <div id="box-9" onclick="printXO('box-9','line_3')"></div>
+            </div>
+        </div>
+        <div class="winner">Player-1 wins!</div>
+    </div>
+</body>
+</html>

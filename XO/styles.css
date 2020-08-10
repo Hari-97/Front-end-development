@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body .container{
+    position: relative;
+    margin: 5% 20%;
+    background-color: wheat;
+    box-shadow: 4px 4px 5px 5px gray;
+    border-radius: 5px;
+    width: 60%;
+    height: 600px;
+}
+.container h2{
+    width: 200px;
+    height: 30px;
+    margin: 1% 41%;
+    padding-top: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 0px gray;
+    background-color: royalblue;
+    cursor: pointer;
+}
+.container h2 span{
+    font-weight: bold;
+    width: 30px;
+}
+.container h1{
+    margin: 5% 38%;
+}
+.container h1 span{
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 0px gray;
+    color: red;
+}
+.container .empty{
+    height: 120px;
+}
+.container .board{
+    position: relative;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    margin: -14% 35%;
+}
+.container .board .line_1,.line_2,.line_3{
+    display: flex;
+    cursor: pointer;
+}
+.container .board .line_1 div,.line_2 div,.line_3 div{
+    background-color: transparent;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 30px;
+}
+.line_3 div {
+    border-bottom: none;
+}
+#box-3 , #box-6 , #box-9{
+    border-right: none;
+}
+.winner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: royalblue;
+    font-weight: bold;
+    font-size: 100px;
+    left: 180px;
+    top: 300px;
+    display: none;
+}
