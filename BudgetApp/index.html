@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Budget App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">My Budget App</div>
+        <div class="balance">
+            <span class="baltitle">Balance: (in Rs.)</span>
+            <span class="bal-value" id="main-bal">0.00</span>
+        </div>
+        <div class="overview">
+            <div class="income">
+                <span class="Inctitle">Income: (in Rs.)</span>
+                <span class="inc-value" id="main-income">0.00</span>
+            </div>
+            <div class="graph">
+
+            </div>
+            <div class="expenditure">
+                <span class="exptitle">Expenditure: (in Rs.)</span>
+                <span class="exp-value" id="main-exp">0.00</span>
+            </div>
+        </div>
+        <div class="dashboard">
+            <div class="dashtitle">Dashboard</div>
+            <div class="tabs">
+                <button id="expensetab">Expenses</button>
+                <button id="incometab">Income</button>
+                <button id="alltab">All</button>
+            </div>
+            <div class="display">
+                <section class="display-expense">
+                    <div class="expense-row">
+                        <span class="sample-content">Expenditure</span>
+                        <span class="sample-amount">Amount</span>
+                    </div>
+                </section>
+                <section class="display-income">
+                    <div class="income-row">
+                        <span class="sample-content">Income</span>
+                        <span class="sample-amount">Amount</span>
+                    </div>
+                </section>
+                <section class="display-all">
+                    <div class="all-row">
+                        <span class="sample-content">Expense/Income</span>
+                        <span class="sample-amount">Amount</span>
+                    </div>
+                </section>
+            </div>
+            <div class="inputtab">
+                    <input type="text" class="content-input" placeholder="Income/Expense" id="title"> 
+                    <input type="text" class="amount-input" placeholder="amount in numbers" id="amt">
+            </div>
+            <div class="drop-down">
+                <select name="actionList" class="drop-list" id="action-drop">
+                    <option value="none">--Select Action--</option>
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
