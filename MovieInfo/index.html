@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <span id="title">MovieInfo</span>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><button onclick="displayHome()">Home</button></li>
+                <li><button style="display: flex;" onclick="displayWatchlist()" id="watchlistbtn">My Watchlist <div id="listlen">1</div></button></li>
+                <li><button>Login/Sign Up</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="searchcontainer">
+        <input type="search" name="searchinput" id="searchbar" placeholder="Search movies by title">
+    </div>
+
+    <div class="home">
+        <div class="searchposter boxshad" onclick="clickSearch()">
+            <span id="searchspan"><div class="text" > Search your favourite movies</div></span> 
+        </div>
+        <div class="watchlistposter boxshd" onclick="displayWatchlist()">
+            <span id="watchspan"><div class="text" >Add movies to your watchlist</div></span>
+        </div>
+        <div class="movifiedposter boxshd" onclick="clickSearch()">
+            <span ><div id="moviefiedspan" class="text"> Get movie-fied with Movie Info</div> </span>
+        </div>
+    </div>
+
+    <div class="titleheader">
+        <div class="title-and-rating">
+            <span id="movie_title"></span>
+            <div class="ratingcontainer">
+                <div class="titlecontainer">
+                    <span style="font-weight: bolder;">IMDB</span>
+                    <span style="font-size: 12px;">Rating:</span>
+                </div>
+                <div class="pointscontainer">
+                    <span id="ratingPoint" style="font-size: 35px; color: rgb(8, 173, 110);font-weight:bolder;"></span>
+                   <span id="totalrating" style="font-size: 15px;"></span>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="subdetails">
+            <span id="type"></span>
+            <span id="rating"></span>
+            <span id="runtime"></span>
+            <span id="genre"></span>
+            <span id="date"></span>
+            <span id="lang"></span>
+            <span id="country"></span>
+        </div>
+    </div>
+    <div class="searchResult">
+        <img src="" alt="movieposter" id="image">
+        <div class="details">
+            <div class="basic_details">
+                
+                <div>
+                    <span style="color: crimson;font-size: 22px;font-weight: bolder; ">Plot : </span>
+                    <span id="plot"></span>
+                </div>
+                <div >
+                    <span style="color: crimson;font-size: 22px;font-weight: bolder; ">Director :</span>
+                    <span id="director"></span>
+                </div>
+                <div>
+                    <span style="color: crimson;font-size: 22px;font-weight: bolder; ">Writer :</span>
+                    <span id="Writers"></span>
+                </div>
+                <div>
+                    <span style="color: crimson;font-size: 22px;font-weight: bolder; ">Actors :</span>
+                    <span id="Actors"></span>
+                </div>
+                <div>
+                    <span style="color: crimson;font-size: 22px;font-weight: bolder; "> Production : </span>
+                    <span id="Production"></span>
+                </div>
+                <div>
+                    <span style="color: crimson;font-size: 22px;font-weight: bolder; "> Box Office : </span>
+                    <span id="Boxofc"></span>
+                </div>
+                <div>
+                    <span style="color: crimson;font-size: 22px;font-weight: bolder; "> Awards : </span>
+                    <span id="awards"></span>
+                </div>
+                <div>
+                    <span style="color: crimson;font-size: 22px;font-weight: bolder; ">Metascore : </span>
+                    <span id="MetaScore"></span>
+                </div>
+                <div>
+                    <span style="color: crimson;font-size: 22px;font-weight: bolder; "> IMDB Id : </span>
+                    <span id="imdbId"></span>
+                </div>
+
+            </div>
+            <div class="buttoncontainer">
+                <button id="watchlist" >+ Add to WatchList</button>
+                <button id="remwatchlist" style="background-color: red;;">Remove from WatchList</button>
+            </div>
+            
+
+        </div>
+    
+        
+    </div>
+    <div class="MyWatchList"> 
+        <div class="wl-header">My WatchList </div>
+        <div class="watchListItems">
+           <!-- <div class="itemcontainer" id="item-1">
+                <div class="wl-image">
+                    <img src="" alt="img" id="wl-img-1">
+                </div>
+                <div class="wl-details">
+                    <div id="wl-titlecontainer">
+                        <div class="wl-title" id="wl-title"></div>
+                        <div id="wl-removebutton"><button id="wl-remove">Remove</button></div>
+                    </div>
+                    <div id="wl-subdetails">
+                        <span id="wl-genre"></span>
+                        <span id="wl-runtime"></span>
+                        <span id="wl-releasedate"></span>
+                    </div>
+                    <div id="wl-rating"></div>
+                    <div id="wl-plot"></div>
+                </div>
+            </div> -->
+        </div>
+        <div class="wl-warning" id="wl-warning">
+            <span>Your Watchlist is empty! :(</span>
+            <span>Search your favourite movies and add them to your watchlist!</span>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

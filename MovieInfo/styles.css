@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 10%;
+}
+.logo
+{
+    color: crimson;
+    padding: 2px 20px;
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    list-style-type: none;
+    width: 150px;
+    text-align: center;
+    padding: 15px 10px;
+}
+.nav ul li button{
+    text-decoration: none;
+    color: crimson;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.nav ul li button:focus{
+    color: black;
+    text-shadow: 0px 0px 3px whitesmoke;
+}
+#listlen{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(83, 82, 82);
+    color: white;
+    margin-left: 5px;
+    text-align: center;
+    padding-bottom: 2px;
+    
+}
+.searchcontainer{
+    width: 60%;
+    height: 50px;
+    margin: 1% 20%;
+}
+.searchcontainer input{
+    width: 70%;
+    height: 40px;
+    margin: 5px 15%;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    padding: 0px 15px;
+    font-size: 20px;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+.home{
+    width: 80%;
+    margin: 3% 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.home div{
+    height: 400px;
+    
+    text-align: center;
+    display: flex;
+}
+
+.searchposter{
+    background-image: url(search1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+.watchlistposter{
+    background-image: url(watchlist.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.movifiedposter{
+    background-image: url(movified.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.home div span{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: grayscale(100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+.home div span .text{
+    width: 100%;
+    height: 50px;
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+    z-index: 10;
+    transform: translateY(60px);
+    transition: transform 1s ease;
+}
+.home div span:hover .text{
+    transform: translateY(-10px);
+}
+.home div span:hover{
+    backdrop-filter: grayscale(0%);
+    box-shadow: 0px 0px 20px 0px gray;
+}
+
+
+.titleheader{
+    width: 70%;
+    height: 100%;
+    margin: 1% 15%;
+    margin-top: 4%;
+}
+.subdetails{
+    width: 70%;
+    color: rgb(0, 0, 0);
+    padding-left: 4%;
+}
+
+.searchResult{
+    width: 70%;
+    height: 100%;
+    margin: 0% 15%;
+    display: flex;
+    background-color: white;
+}
+.searchResult img{
+    width: 40%;
+}
+
+.searchResult .details{
+    width: 60%
+}
+.title-and-rating{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.title-and-rating #movie_title{
+    width: 70%;
+    font-size: 40px;
+    font-weight: bolder;
+    color: crimson;
+    padding-left: 4%;
+    /*text-decoration: underline;*/
+}
+.ratingcontainer{
+    padding-top: 20px;
+    padding-right: 4%;
+    text-align: center;
+    display: flex;
+}
+.titlecontainer{
+    display: flex;
+    flex-direction: column;
+    padding-right:15px ;
+    padding-top: 5px;
+}
+.details .basic_details div{
+    margin: 4%;
+    font-size: 20px;
+    line-height: 30px;
+}
+.details .buttoncontainer{
+    margin: 4%;
+    width: 250px;
+}
+.details .buttoncontainer button{
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    background-color: teal;
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 10px;
+}
+.details .buttoncontainer button:hover{
+    box-shadow: 0px 0px 20px 0px gray;
+}
+.details .buttoncontainer button:active{
+    box-shadow: 0px 0px 20px 0px gray;
+    font-size: 19px;
+
+}
+
+.MyWatchList{
+    width: 50%;
+    height: 100%;
+    margin: 4% 25%;
+}
+.wl-header{
+    font-size: 35px;
+    font-weight: bolder;
+    color: rgb(0, 108, 180);
+}
+.watchListItems{
+    width: 100%;
+    height: 100%;
+    max-height: 800px;
+    overflow: scroll;
+    margin-top: 3%;
+    background-color: white;
+}
+.itemcontainer{
+    width: 100%;
+    height: 200px;
+    margin: 2% 0;
+    display: flex;
+}
+.itemcontainer:nth-child(odd){
+    background-color: whitesmoke;
+}
+.wl-title{
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.wl-title:hover{
+    font-weight: lighter;
+    text-decoration: underline;
+}
+
+#wl-remove{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: crimson;
+    text-decoration: underline;
+}
+#wl-remove:active{
+    font-size: 12px;
+}
+.wl-image{
+    width: 20%;
+}
+.wl-image img{
+    width: 100%;
+    height: 100%;
+}
+.wl-details{
+    width: 80%;
+    margin: 1% 2%;
+}
+.wl-titlecontainer{
+    display: flex;
+    justify-content: space-between;
+}
+.wl-rating , .wl-plot{
+    width: 100%;
+    margin: 2% 0%;
+    font-size: 20px;
+}
+.w1-subdetails{
+    font-size: 15px;
+}
+.wl-rating{
+    color: rgb(0, 108, 180);
+    font-weight: bold;
+}
+.wl-warning{
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0%;
+    font-size: 20px;
+    line-height: 35px;
+    padding-top: 22px;
+    padding-left: 50px;
+    background-color: whitesmoke;
+    height: 100px;
+    box-shadow: 2px 2px 5px 0px gray;
+}
+
+
+
+
